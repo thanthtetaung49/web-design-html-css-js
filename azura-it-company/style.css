@@ -1,0 +1,496 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: #1a1917;
+}
+
+/* Start Header Section */
+header {
+    height: 100vh;
+
+    background-size: cover;
+    background: url("./images/cover/bannerphoto.avif") no-repeat fixed;
+}
+
+/* Start Nav Bar  */
+nav ul li {
+    padding: 0;
+    margin: 0;
+}
+
+.logos {
+    font-size: 30px;
+}
+
+.humbugers {
+    color: white;
+}
+
+.line-1,.line-2,.line-3{
+    width: 20px;
+    height: 3px;
+
+    color: #ffffff;
+
+    margin: 6px;
+
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.cross-xs .line-1 {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.cross-xs .line-2 {
+    opacity: 0;
+}
+
+.cross-xs .line-3 {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* End Nav Bar  */
+
+/* Start Banner  */
+.banners {
+    height: 100vh;
+
+    position: relative;
+}
+
+.banners h3 {
+    width: 70%;
+
+    line-height: 200%;
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    transform: translate(0, -50%);
+}
+
+.banneranis {
+    animation-name: bananimation;
+    animation-duration: 3s;
+}
+
+@keyframes bananimation {
+    from {
+        transform: translate(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+/* End Banner  */
+/* End Header Section  */
+
+/* Start Introduction Online Selling/Buying  */
+.auzoranis {
+    animation-name: auzoraanimation;
+    animation-duration: 3s;
+}
+
+@keyframes auzoraanimation {
+    from {
+        transform: translate(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+.our-auzora p {
+    width: 90%;
+}
+
+.parent-logos {
+    position: relative;
+}
+
+.laptop-logos {
+    position: absolute;
+
+    left: 0;
+    top: 50%;
+
+    transform: translate(0%, -50%);
+}
+
+.laptopbrandanis {
+    animation-name: laptopbrandanimation;
+    animation-duration: 2s;
+}
+
+.aboutlaptopanis {
+    animation-name: aboutlaptopanimation;
+    animation-duration: 2s;
+}
+
+@keyframes laptopbrandanimation {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes aboutlaptopanimation {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.brand-names {
+    margin: 10px;
+}
+
+.imganimation {
+    animation-name: onlineimganimation;
+    animation-duration: 3s;
+}
+
+.textanimation {
+    animation-name: onlinetextanimation;
+    animation-duration: 3s;
+}
+
+@keyframes onlineimganimation {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes onlinetextanimation {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* End Introduction Online Selling/Buying  */
+
+/* Start Game Item Section  */
+.game-types {
+    padding: 0;
+    margin: 0;
+}
+
+.game-types li {
+    padding: 5px;
+    margin: 10px;
+
+    list-style: none;
+
+    font-size: 14px;
+
+    color: #ffc107;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.game-types li::before {
+    content: "";
+
+    width: 100%;
+    height: 100%;
+
+    border-bottom: 1px solid red;
+
+    transform: translate(100%);
+    opacity: 0;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    transition: transform 0.5s;
+}
+
+.game-types li:hover::before {
+    transform: translate(0%);
+    opacity: 1;
+}
+
+.game-types li.active-items {
+    color: red;
+}
+
+.defaultimgsizes img {
+    width: 200px;
+    height: 100px;
+
+    padding: 5px;
+
+    transition: transform 0.5s;
+}
+
+.defaultimgsizes img:hover {
+    transform: scale(1.1);
+}
+
+.seemores a {
+    text-decoration: none;
+}
+
+/* End Game Item Section  */
+
+/*Start Laptop and Desktop Section*/
+li.propertylists {
+    color: #ffc107;
+    font-size: 14px;
+
+    list-style: none;
+
+    padding: 5px;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.propertylists::before {
+    content: "";
+
+    width: 100%;
+    height: 100%;
+
+    border-bottom: 1px solid red;
+
+    transform: translateX(100%);
+
+    transition: transform 0.5s;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.propertylists:hover::before {
+    transform: translateX(0%);
+}
+
+
+li.mycolors {
+    color: red;
+}
+
+
+.card {
+    margin: 10px;
+
+    background-color: #f4f4f4;
+}
+
+.card-body {
+    overflow: hidden;
+
+    position: relative;
+}
+
+.card-body img {
+    width: 80%;
+    height: 200px;
+
+    display: block;
+
+    margin: 5px auto;
+
+    box-shadow: 4px 5px 10px silver;
+
+    transition: transform 0.5s ease-out;
+}
+
+.card-body img:hover {
+    transform: scale(1.1);
+}
+
+.card-body span {
+    background-color: silver;
+
+    padding: 5px;
+
+    position: absolute;
+    right: 15%;
+    top: 30%;
+}
+
+.card-body h5 {
+    padding: 15px;
+}
+
+.btn {
+    overflow: hidden;
+
+    position: relative;
+}
+
+.btn::before {
+    content: "$800";
+
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+
+    padding: 10px;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: deepskyblue;
+
+    border: none;
+
+    transform: translateX(100%);
+
+    transition: transform 0.5s;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover::before {
+    transform: translateX(0%);
+}
+
+.btn:active::before {
+    content: "Thanks";
+}
+
+/*End Laptop and Desktop Section*/
+
+/*Start Info Section */
+.infosections {
+    background: linear-gradient(
+            200deg,
+            #107a09,
+            #631021
+    );
+}
+
+/*End Info Section*/
+
+/*Start Member Sign Up Section */
+
+.parent-persons {
+    position: relative;
+}
+
+.persons {
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+}
+
+.forms {
+    width: 70%;
+}
+
+.submitsbtn {
+    background-color: #a61e39;
+
+    color: #ffffff;
+    font-weight: bold;
+
+    padding: 10px 0;
+
+    border: none;
+    border-radius: 10px;
+}
+
+.leftanimations {
+    animation-name: formleftanimation;
+    animation-duration: 3s;
+}
+
+.rightanimations {
+    animation-name: formrightanimation;
+    animation-duration: 3s;
+}
+
+@keyframes formleftanimation {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes formrightanimation {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/*End Member Sign Up Section*/
+
+/*Start Footer Section*/
+.footer {
+    background-color: #6a1a21;
+}
+
+.footer-lists ul li {
+    list-style-type: none;
+}
+
+.footer-lists ul li a {
+    line-height: 200%;
+
+    text-decoration: none;
+}
+
+.social-medias i {
+    cursor: pointer;
+}
+
+/*End Footer Section*/

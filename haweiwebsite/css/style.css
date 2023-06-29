@@ -1,0 +1,665 @@
+body {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+/* Start Header Section  */
+/* Stat nav bar  */
+
+.navbar {
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+.navbar-brand span {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 15.5px !important;
+}
+
+.line_ones,.line_twos {
+    width: 20px;
+    height: 2px;
+
+    margin: 5px;
+
+    transition: all 0.5s;
+}
+
+.crossxs .line_ones {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+
+.crossxs .line_twos {
+    transform: rotate(-45deg) translate(2px, -2px);
+}
+
+.item-links a:hover {
+    border-bottom: 1px solid #000;
+}
+
+@media (max-width: 1200px) {
+    
+    .item-links a:hover {
+        border-bottom: none;
+    }
+}
+/* End nav bar  */
+
+/*Start Banner Section */
+
+.bannerSections {
+    margin-top: 50px;
+}
+
+.banners {
+    width: 100%;
+    height: 70vh;
+
+    background-size: cover;
+    background: url("./../asset/img/banner/nature.jpg") no-repeat fixed;
+    border-radius: 30px;
+}
+
+.dataButtons {
+    background-color: transparent;
+
+    border-color: #ffffff;
+
+    font-weight: bold;
+    font-size: 14px;
+
+    padding: 10px 25px;
+    margin-top: 25px;
+}
+
+/*End Banner Section */
+/* End Header Section  */
+
+/* Start Carousel Section  */
+
+.carousel {
+    border-radius: 30px;
+
+    box-shadow: 3px 3px 10px rgba(0,0,0, 0.3);
+}
+
+.carousel ul li {
+    list-style: none;
+
+    color: #000;
+}
+
+.hawei-p50s button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width:576px) and (max-width:992px) {
+
+    .carousel img {
+        width: 300px;
+    }
+    
+}
+
+/* End Corusel Section  */
+
+/* Start P-50 Section  */
+
+.p50Sections {
+    background-color: #f4f4f4;
+    border-radius: 30px;
+}
+
+.p50Sections h1 {
+    cursor: pointer;
+}
+
+.p50Infos {
+    width: 400px;
+    height: auto;
+
+    margin: auto;
+}
+
+.p50Infos small{
+    display: block;
+}
+
+.elephants {
+    position: relative;
+}
+
+.elephants img {
+    border-radius: 0px 30px 30px 0px;
+}
+
+.p50Images {
+    width: 300px;
+    height: auto;
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    transform: translate(-50%,-50%);
+
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+
+    .elephant-ones {
+        display: none;
+    }
+    
+    .p50Infos {
+        width: 245px;
+        height: auto;
+
+        margin-left: 20px;
+    }
+
+    .elephants {
+        position: relative;
+    }
+    
+    .p50Images {
+        width: 200px;
+        height: auto;
+
+        margin: 0px;
+
+        position: relative;
+        left: 25%;
+    }
+}
+
+/* End P-50 Section  */
+
+/* Start P-50 Pocket Section  */
+
+.pocketSections {
+    background-color: #f4f4f4;
+    border-radius: 30px;
+}
+
+.pocketSections h1 {
+    cursor: pointer;
+}
+
+.snowhomes {
+    position: relative;
+}
+
+.snowhomes img {
+    width: 100%;
+
+    border-radius: 30px 0px 0px 30px;
+}
+
+.snowhomes .p50PocketImages {
+    width: 300px;
+    height: auto;
+
+    position: absolute;
+    left: 100%;
+    top: 50%;
+
+    transform: translate(-70%, -50%);
+
+    cursor: pointer;
+}
+
+.pocketInfos {
+    width: 300px;
+    height: auto;
+
+    margin: 0px 30px;
+}
+
+.pocketInfos small {
+    display: block;
+}
+
+@media (max-width: 992px) {
+
+    .snowhomesOnes {
+        display: none;
+    }
+
+    .pocketInfos {
+        width: 250px;
+        height: auto;
+
+        margin: 0px;
+
+        position: relative;
+        left: 20%;
+
+        transform: translate(-50%);
+    }
+
+    .snowhomes {
+        width: 250px;
+
+        position: relative;
+    }
+
+    .snowhomes img.p50PocketImages {
+        width: 200px;
+        height: auto;
+
+        position: relative;
+        left: 75%;
+    }
+}
+
+/* End P-50 Pocket Section  */
+
+/* Start HUAWEI Watch Fit 2 Section  */
+
+.watchfitSections {
+    background-color: #f4f4f4;
+    border-radius: 30px;
+}
+
+.watchfitSections h1 {
+    cursor: pointer;
+}
+
+.watchfitInfos{
+    width: 300px;
+    height: auto;
+}
+
+.watchfitInfos small {
+    display: block;
+}
+
+.watchfitImages {
+    position: relative;
+}
+
+.watchfitImages img {
+    height: 100%;
+
+    border-radius: 0px 30px 30px 0px;
+}
+
+.watchfitTwos{
+    width: 300px;
+    height: auto;
+
+    transform: translate(-15px);
+
+    position: absolute;
+    left: -20%;
+
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+
+    .watchfitOnes {
+        display: none;
+    }
+
+    .watchfitImages {
+        width: 250px;
+
+        margin: 0px;
+
+        position: relative;
+    }
+
+    .watchfitTwos {
+        width: 200px;
+        height: auto;
+
+        position: relative;
+        left: 10%;
+    }
+
+    .watchfitInfos {
+        width: 245px;
+        height: auto;
+
+        margin-left: 30px;
+    }
+
+}
+
+/* End HAWEI Watch Fit 2 Section  */
+
+/* Start Smart Phone Section  */
+
+.advProducts {
+    background-color: #f4f4f4;
+    border-radius: 30px;
+}
+
+.advProductImages img {
+    height: 100%;
+
+    border-radius: 30px 0px 0px 30px;
+}
+
+.advProductTexts {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.advProductTexts div p {
+    font-size: 30px;
+}
+
+.advProductTexts div button {
+    font-size: 13px;
+
+    padding: 10px 20px;
+
+    transition: background-color 0.3s;
+}
+
+.advProductTexts div button:hover{
+    background-color: rgba(0,0,0, 0.7);
+}
+
+@media (max-width: 992px) {
+    .advProductImages img {
+        border-radius: 30px 30px 0px 0px;
+    }
+
+    .advProductTexts {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .advProductTexts div button{
+        margin-bottom: 30px;
+    }
+
+}
+
+/* End Smart Phone Section  */
+
+/* Start Smart Phone Product Section  */
+
+.card {
+    background-color: #f4f4f4;
+    border-radius: 30px;
+    border: none;
+}
+
+.card-body h1 {
+    cursor: pointer;
+}
+
+.bigCards {
+    width: 40%;
+}
+
+.heading-six,.heading-three {
+    cursor: pointer;
+}
+
+.card-body img {
+    cursor: pointer;
+}
+
+/* Start Card Images  */
+
+.CardImages {
+    margin: 65px 0px;
+}
+
+@media (max-width: 992px) {
+
+    .CardImages img {
+        width: 250px;
+        height: auto;
+    }
+    
+}
+
+/* End Card Images  */
+
+.itemSpecifications {
+    font-size: 13px;
+}
+
+.itemSectionLinks a {
+    text-decoration: none;
+
+    margin-bottom: 50px;
+
+    display: inline-block;
+}
+
+.itemSectionLinks a:hover {
+    color: #000000;
+    opacity: 0.8;
+}
+
+.itemSectionLinks a i {
+    transition: all 0.5s;
+}
+
+.itemSectionLinks a:hover i{
+    transform: translateX(5px);
+}
+
+/* End Smart Phone Product Section  */
+
+/*Start PC Section */
+
+.sectionTops {
+    margin-top: 150px;
+}
+
+/*End PC Section */
+
+/* Start Huawei Start Office And Emui 10.1  */
+
+.officeEmuiSections {
+    background-color: #f4f4f4;
+    border-radius: 30px;
+}
+
+.smartOffices img,.emuis img {
+    border-radius: 30px 30px 0px 0px;
+
+    cursor: pointer;
+
+}
+
+.aboutOfficeEmuis button {
+    padding: 10px 15px;
+
+    border: none;
+
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+
+    background-color: #000;
+
+    border-radius: 30px;
+
+    transition: background-color 0.8s;
+}
+
+.aboutOfficeEmuis button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 992px) {
+
+    .smartOffices img {
+        border-radius: 30px;
+    }
+
+    .emuis img {
+        border-radius: 30px;
+    }
+}
+
+/* End Huawei Start Office And Emui 10.1  */
+
+/* Start Our Services Section  */
+
+.serviceSections {
+    background-color: #f4f4f4;
+
+    border-radius: 30px;
+}
+
+.serviceTexts a {
+    text-decoration: none;
+}
+
+.serviceTexts .text-muted:hover {
+    color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* End Our Services Section  */
+
+/* Start Footer  */
+
+.footer{
+    background-color: #f4f4f4;
+}
+
+.footerLinks li a {
+    line-height: 2;
+    font-size: 14px;
+}
+
+.footerLinks li a:hover {
+    color: #000000;
+}
+
+.fa-facebook,.fa-youtube {
+    color: grey;
+}
+
+.fbLinks i:hover,.ytLinks i:hover,.igLinks i:hover {
+    color: #000;
+}
+
+.our-partners img {
+    width: 80px;
+    height: auto;
+
+    margin-right: 10px;
+}
+
+.copyRights {
+    width: 300px;
+}
+
+.copyRights p,.copyRightLinks a,.globalLinks a {
+    font-size: 14px;
+}
+
+.copyRightLinks a:hover {
+    color: #000;
+}
+
+.globalLinks a:hover {
+    color: black;
+}
+
+@media (max-width: 992px) {
+    .final-parts {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: start !important;
+    }
+
+    .copyRights p,.copyRightLinks a,.globalLinks a {
+        font-size: 13px;
+    }
+
+    .globalLinks {
+        padding-bottom: 10px;
+    }
+}
+
+/* End Footer  */
+
+/*Start Learn More and Buy Button*/
+
+.learnMoreBtns {
+    padding: 10px 20px;
+
+    border: none;
+
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+
+    background-color: #000000;
+
+    border-radius: 30px;
+
+    transition: all 0.5s;
+}
+
+.learnMoreBtns:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.angleRights {
+    transition: all 0.5s;
+}
+
+.learnMoreBtns:hover .angleRights {
+    transform: translateX(5px);
+}
+
+.buyBtns {
+    color: #000000;
+    font-size: 13px;
+    font-weight: bold;
+
+    border: 1px solid silver;
+    border-radius: 30px;
+
+    padding: 10px 20px;
+
+    transition: all 0.5s;
+}
+
+.buyBtns:hover {
+    border-color: #000000;
+}
+
+.buyBtns:hover .angleRights {
+    transform: translateX(5px);
+}
+
+@media (max-width: 992px) {
+    
+    .learnMoreBtns,.buyBtns {
+        margin-bottom: 30px;
+    }
+
+}
+
+/*End Learn More and Buy Button*/
