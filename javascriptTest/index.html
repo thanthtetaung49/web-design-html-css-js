@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test javascript</title>
+</head>
+<body>
+    <div>
+        <h1>Selected Value</h1>
+        <div id="show_selected_data"></div>
+    </div>
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="select_all" id="select_all">
+                    </td>
+                    <td>Name</td>
+                    <td>Email</td>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+            </tbody>
+        </table>
+    </div>
+
+    <button id="next" type="button">Next</button>
+    <button id="prev" type="button">Prev</button>
+
+    <!-- carousel -->
+    <div style="display: flex;">
+        <div class="carousel_items" style="width: 500px; height: 300px; background-color: red;"></div>
+        <div class="carousel_items" style="width: 500px; height: 300px; background-color: green;"></div>
+        <div class="carousel_items" style="width: 500px; height: 300px; background-color: blue;"></div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

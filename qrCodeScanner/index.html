@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Scanner</title>
+  <style>
+    /* Style the scanner view */
+    #qr-reader {
+      width: 300px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    #result {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align: center;">QR Code Scanner</h1>
+  <div id="qr-reader"></div>
+  <div id="result">Scan a QR Code to see the result here</div>
+
+  <!-- Include the html5-qrcode library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.8/html5-qrcode.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        function onScanSuccess(decodedText, decodedResult) {
+          // Display the scanned result
+          document.getElementById("result").innerText = `Scanned result: ${decodedText}`;
+        }
+      
+        function onScanFailure(error) {
+          // Handle scan failure if needed (optional)
+          console.warn(`QR code scan error: ${error}`);
+        }
+      
+        // Initialize the QR code reader
+        const html5QrcodeScanner = new Html5QrcodeScanner("qr-reader", { fps: 10, qrbox: 250 });
+        html5QrcodeScanner.render(onScanSuccess, onScanFailure);
+      });
+      
+  </script>
+</body>
+</html>
