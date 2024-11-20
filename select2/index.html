@@ -1,21 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery CDN Example</title>
 
-    <h1>Select 2 testing</h1>
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Hello, Select 2!</h1>
+    <form id="form" action="">
+        <select
+            id="select2Change"
+          class="js-example-basic-multiple"
+          name="states[]"
+          multiple="multiple"
+          style="width: 400px"
+        >
+          <option value="1">Apple</option>
+          <option value="2">Orange</option>
+          <option value="3">Banana</option>
+          <option value="4">Water maleon</option>
+          <option value="5">Pine apple</option>
+        </select>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <button type="button" id="submit">Submit</button>
+    </form>
+
+    <!-- Link to jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <script>
-        $(document).ready(function() {
-            console.log('hello');
+      // jQuery code
+      $(document).ready(function () {
+        $(".js-example-basic-multiple").select2();
+
+        let firstOption = $("#select2Change > option")[0];
+        let thirdOption = $("#select2Change > option")[2];
+        let fifthOption = $("#select2Change > option")[4];
+
+        firstOption.setAttribute('selected', true);
+        thirdOption.setAttribute('selected', true);
+        fifthOption.setAttribute('selected', true);
+
+        $("#submit").on('click', function (e) {
+            e.preventDefault();
+
+            let form = $("#form")[0];
+            let formData = new FormData(form);
+
+            console.log(formData);
         });
+
+      });
     </script>
-    <!-- <script src="./app.js"></script> -->
-</body>
+  </body>
 </html>
