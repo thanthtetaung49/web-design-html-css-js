@@ -1,0 +1,23 @@
+.draggable {
+  width: 25%;
+  min-height: 6.5em;
+  margin: 1rem 0 0 1rem;
+  background-color: #29e;
+  color: white;
+  border-radius: 0.75em;
+  padding: 4%;
+  touch-action: none;
+  user-select: none;
+}
+
+.dropzone {
+  width: 50%;
+  height: 10rem;
+  margin: 1rem 0 0 1rem;
+  background-color: rgb(34, 238, 58);
+  color: white;
+  border-radius: 0.75em;
+  padding: 4%;
+  touch-action: none;
+  user-select: none;
+}

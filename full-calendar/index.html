@@ -3,13 +3,35 @@
   <head>
     <meta charset="utf-8" />
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+    
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         var calendarEl = document.getElementById("calendar");
         var calendar = new FullCalendar.Calendar(calendarEl, {
           headerToolbar: { right: "dayGridMonth,timeGridWeek" },
           initialView: "dayGridMonth",
-         
+          plugins: [interactionPlugin],
+          eventClick: function (info) {
+            info.event.backgroundColor = "red";
+            console.log(info.event);
+            console.log(info.event.startStr);
+            console.log("hello world");
+          },
+          events: [
+            {
+              groupId: "blueEvents", // recurrent events in this group move together
+              daysOfWeek: ["4"],
+              startTime: "10:45:00",
+              endTime: "12:45:00",
+            },
+            {
+              daysOfWeek: ["3"], // these recurrent events move separately
+              startTime: "11:00:00",
+              endTime: "11:30:00",
+              color: "red",
+            },
+          ],
+          editable: true,
         });
         calendar.render();
       });
